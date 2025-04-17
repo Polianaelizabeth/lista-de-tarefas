@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ja fiz??</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de tarefas</h1>
+    </header>
+    <h2>Adicionar nova tarefa</h2>   
+
+    <div class="tarefas" id="adicionandoTarefa">
+
+        <input type="text" id="novaTarefa" placeholder="Digite a tarefa aqui...">
+        <select id="selecao">
+            <option value="fazer"> a fazer</option>
+            <option value="fazendo">Em andamento</option>
+            <option value="feito">Concluída</option>
+        </select>
+        <button id="adicionarTarefa" onclick="novaTarefa()">Adicionar</button>
+
+    </div>
+
+    <button id="mostrarTarefas" onclick="mostrarTarefas()">MINHAS TAREFAS</button>
+    <div class="tarefas" id="minhasTarefas">
+        
+        <h3>Tarefas para inciar</h3>
+        <ul id="listaFazer"></ul>
+        <h3>Tarefas em andamento</h3>
+        <ul id="listaFazendo"></ul>
+        <h3>Tarefas concluídas</h3>
+        <ul id="listaFeito"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

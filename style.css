@@ -1,0 +1,202 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, #8a2be2, #ff69b4); /* Gradiente de roxo e rosa */
+
+
+}
+
+/* Estilo do header */
+header {
+    text-align: center;
+    margin-bottom: 20pt;
+    padding: 20px;
+
+
+}
+
+/* Estilo do título */
+header h1 {
+    font-size: 25pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+/* estilo do botao mostrar tarefas */
+#mostrarTarefas {
+    background-color: rgb(177, 55, 196);
+    color: white;
+    padding: 15pt;
+    margin-bottom: 15pt;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 20%;
+    margin-left: 40%;
+    font-size: 12pt;
+}
+/* Estilo do botão de adicionar tarefa */
+option {
+    background-color: rgb(177, 55, 196);
+    color: white;
+  }
+
+/* Estilo das tarefas */
+.tarefas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tarefas input,
+.tarefas button,
+.tarefas select {
+    padding: 10pt;
+    font-size: 12pt;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Input */
+.tarefas input {
+    width: 25%;
+    border: 2px solid #fff;
+    background-color: rgba(164, 61, 205, 0.4);
+    
+}
+
+::-webkit-input-placeholder {
+    color: rgb(213, 200, 219);
+ }
+
+/* Botão */ 
+.tarefas button {
+    background-color: #ff69b4; /* Rosa */
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarefas button:hover {
+    background-color: #ff1493; /* Rosa mais escuro */
+}
+
+/* Select */
+.tarefas select {
+    background-color: rgb(255, 255, 255, 0.1);
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+/* Estilo das listas de tarefas */
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo dos itens das listas de tarefas */
+li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+select {
+    margin-left: 10px;
+}
+
+/* esconder listas */
+#minhasTarefas {
+    display: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .tarefas input,
+    .tarefas button,
+    .tarefas select {
+        width: 100%;
+    }
+
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    select {
+        margin-left: 0;
+        margin-top: 10pt;
+    }
+    #mostrarTarefas {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .tarefas input,
+    .tarefas button,
+    .tarefas select {
+        width: 90%;
+    }
+    #mostrarTarefas {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
