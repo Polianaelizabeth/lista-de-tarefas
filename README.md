@@ -5,6 +5,7 @@ Uma aplicação web simples e responsiva para gerenciamento de tarefas, permitin
 
 ## Para visualizar
 
+Para visualizar acesse o link https://polianaelizabeth.github.io/lista-de-tarefas/
 
 ## ✨ Funcionalidades
 
